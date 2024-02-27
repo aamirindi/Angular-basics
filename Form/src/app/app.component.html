@@ -1,0 +1,79 @@
+<div
+  class="bg-[#e1e9fa] w-full h-screen flex flex-col justify-center items-center font-['Poppins'] text-center"
+>
+  <h1 class="text-3xl font-semibold text-[#38548c]">Sign Up</h1>
+  <div class="form flex flex-col justify-center p-5 gap-3">
+    <div class="flex justify-center flex-wrap gap-3 mt-5">
+      <div class="input-group">
+        <input
+          type="text"
+          name="first_name"
+          id=""
+          placeholder="First Name"
+          required
+          class="input-field"
+        />
+        <input
+          type="text"
+          name="last_name"
+          id=""
+          placeholder="Last Name"
+          required
+          class="input-field"
+        />
+      </div>
+      <div class="input-group flex-col">
+        <input
+          type="email"
+          name="email"
+          id=""
+          placeholder="Email address"
+          required
+          class="input-field"
+        />
+        <div class="input-group">
+          <input
+            type="{{ hidePassword ? 'password' : 'text' }}"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+            class="input-field"
+          />
+          <span class="toggle-password" (click)="togglePasswordVisibility()">
+            <i
+              class="fas"
+              [class.fa-eye]="!hidePassword"
+              [class.fa-eye-slash]="hidePassword"
+            ></i>
+          </span>
+        </div>
+        <div class="input-group">
+          <input
+            type="{{ hideConfirmPassword ? 'password' : 'text' }}"
+            name="password"
+            id="password"
+            placeholder="Confirm Password"
+            required
+            class="input-field"
+          />
+          <span class="toggle-password" (click)="togglePasswordVisibilityTwo()">
+            <i
+              class="fas"
+              [class.fa-eye]="!hideConfirmPassword"
+              [class.fa-eye-slash]="hideConfirmPassword"
+            ></i>
+          </span>
+        </div>
+      </div>
+      <button
+        class="px-5 py-3 bg-[#38548c] text-zinc-200 rounded-lg w-full transition duration-300 ease-in-out transform hover:bg-[#2b3c56] hover:scale-105 active:scale-95 mx-32 mt-6"
+      >
+        Continue
+      </button>
+      <p class="text-[#38548c] opacity-50">
+        I already have an account. <a href="#">Log in</a>
+      </p>
+    </div>
+  </div>
+</div>

@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainComponent } from './main/main.component';
-import {MatIconModule} from '@angular/material/icon';
 import { PhoneComponent } from './phone/phone.component';
 import { VisionComponent } from './vision/vision.component';
 import { ShoppingComponent } from './shopping/shopping.component';
-
+import { CarouselComponent } from './carousel/carousel.component';
+import {MatIconModule} from '@angular/material/icon';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,13 @@ import { ShoppingComponent } from './shopping/shopping.component';
     PhoneComponent,
     VisionComponent,
     ShoppingComponent,
-  ],
+    CarouselComponent,
+    FooterComponent,
+  ],  
   imports: [
     BrowserModule,
-    MatIconModule
+    MatIconModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

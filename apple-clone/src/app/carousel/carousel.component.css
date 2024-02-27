@@ -1,0 +1,11 @@
+.carousel {
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,1 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
+
+.top-left {
+  background-image: url("../../assets/promo_apple_watch_series_9_order__b3u85rm9zf6u_small_2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 90vh;
+}
+.top-right {
+  background-image: url("../../assets/promo_mbp__ek7p477bkp6q_large.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.middle-left {
+  background-image: url("../../assets/promo_ipad__fioegapg12qi_small_2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 90vh;
+}
+.middle-right {
+  background-image: url("../../assets/promo_airpods_pro_order__d8xv36p4uwae_small_2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}
+.bottom-left {
+  background-image: url("../../assets/tile__cauwwcyyn9hy_small_2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 90vh;
+}
+.bottom-right {
+  background-image: url("../../assets/promo_iphone_tradein__bugw15ka691e_small_2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+}

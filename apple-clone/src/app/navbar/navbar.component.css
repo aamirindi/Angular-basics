@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@500;800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto:wght@100&family=Source+Serif+4:opsz,wght@8..60,300&family=Ubuntu:wght@300&display=swap");
 
 @media (max-width: 1080px) {
+  .navbar-container {
+    position: fixed;
+  }
   .list {
     display: none;
   }

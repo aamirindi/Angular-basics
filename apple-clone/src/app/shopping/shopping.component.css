@@ -39,3 +39,37 @@
   background-repeat: no-repeat;
   width: 50%;
 }
+
+@media (max-width: 670px) {
+  .shopping-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-left,
+  .top-right,
+  .middle-left,
+  .middle-right,
+  .bottom-left,
+  .bottom-right {
+    margin: 0 10px 10px 10px;
+    width: 100%;
+  }
+
+  .top-right {
+    background-image: url("../../assets/promo_mbp__ek7p477bkp6q_small_2x\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    & div {
+      padding-bottom: 200px;
+    }
+  }
+  .middle-right,
+  .bottom-right {
+    & div {
+      padding-bottom: 200px;
+    }
+  }
+}

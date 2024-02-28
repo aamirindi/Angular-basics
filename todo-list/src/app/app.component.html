@@ -1,1 +1,43 @@
-<h1 class="text-3xl font-bold underline">Hello world!</h1>
+<div class="h-fit flex items-center flex-col font-['Poppins']">
+  <h1 class="text-7xl text-[#a079c8] py-10">todos</h1>
+  <div
+    class="flex container-todo w-[40%] gap-3 justify-center items-center m-3 relative"
+  >
+    <input
+      type="text"
+      [(ngModel)]="newTodo"
+      class="w-full shadow-xl py-2 px-5 focus:outline-none"
+    />
+    <button (click)="addTodo()" class="bg-white px-5 py-2 absolute right-0">
+      +
+    </button>
+  </div>
+  <ul class="grid w-[40%] list-todo gap-3 my-5 px-3">
+    <ng-container *ngFor="let todo of todos; let i = index">
+      <li class="text-xl w-full text-white py-2 px-5 bg-[#a079c8]">
+        <ng-container *ngIf="!editMode[i]">
+          <span>{{ todo }}</span>
+          <span class="relative text-[15px] text-black pt-5 flex gap-2 right-0">
+            <i
+              class="fas fa-edit cursor-pointer"
+              (click)="toggleEditMode(i)"
+            ></i>
+            <i
+              class="fas fa-trash-alt cursor-pointer"
+              (click)="deleteTodo(i)"
+            ></i>
+          </span>
+        </ng-container>
+        <ng-container *ngIf="editMode[i]">
+          <textarea
+            #textarea
+            class="w-full shadow-xl h-full py-1 px-3 text-[15px] text-black focus:outline-none"
+            (blur)="saveEdit(i, textarea.value)"
+            (keydown.enter)="$event.preventDefault()"
+            >{{ todo }}</textarea
+          >
+        </ng-container>
+      </li>
+    </ng-container>
+  </ul>
+</div>

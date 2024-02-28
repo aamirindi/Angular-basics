@@ -1,3 +1,12 @@
+/* fortawesome icon */
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+/* tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  height: 100vh;
+  background-color: #dfd3ea;
+}
